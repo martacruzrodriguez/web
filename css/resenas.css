@@ -1,0 +1,17 @@
+/* Carrusel de reseñas (compartido por los cuatro libros). Usa las variables de color de cada libro. */
+.resenas { padding: clamp(3rem, 7vw, 6rem) 0; overflow: hidden; }
+.resenas__cab { padding: 0 var(--pad); margin-bottom: 2rem; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .75rem 2rem; }
+.resenas__cab h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(2rem, 4vw, 3rem); color: var(--heading); }
+.resenas__cab a { color: var(--link); font-size: .95rem; text-decoration: none; border-bottom: 1px solid var(--line); }
+.resenas__cab a:hover { border-color: var(--link); }
+.resenas__visor { cursor: grab; touch-action: pan-y; user-select: none; -webkit-user-select: none;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+.resenas__visor.arrastrando { cursor: grabbing; }
+.resenas__pista { display: flex; gap: 1.25rem; width: max-content; will-change: transform; }
+.resena { flex: 0 0 auto; width: clamp(17rem, 28vw, 24rem); padding: 1.5rem 1.6rem; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.03); }
+.resena__autor { font-weight: 600; font-size: .95rem; color: var(--text); margin-bottom: .5rem; }
+.resena__estrellas { color: var(--accent); letter-spacing: .15em; font-size: .95rem; margin-bottom: .4rem; }
+.resena__titulo { font-weight: 700; font-size: 1.05rem; line-height: 1.3; color: var(--text); margin-bottom: .6rem; }
+.resena__texto { font-size: .95rem; line-height: 1.55; color: var(--soft); }
+.resena img { -webkit-user-drag: none; }
