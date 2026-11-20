@@ -10,13 +10,17 @@
     <script>document.documentElement.classList.add("js")</script>
     <script src="js/luz.js" defer></script>
     <script src="js/efecto3D.js" defer></script>
+    <script src="js/youtube-datos.js" defer></script>
+    <script src="js/youtube.js" defer></script>
     <title>Página de Marta Cruz</title>
+    <link rel="icon" type="image/png" href="img/logotipo.png">
 </head>
 <body>
     <header class="barra">
         <a class="marca" href="index.html">MARTA CRUZ</a>
         <nav>
             <a href="#libros">Mis libros</a>
+            <a href="#youtube">YouTube</a>
             <a href="biografia.html">Biografía</a>
             <a href="#club">Lectores</a>
         </nav>
@@ -110,6 +114,58 @@
         </article>
     </main>
 
+    <section class="youtube" id="youtube" data-escena aria-labelledby="youtube-titulo">
+        <div class="escena__luz" aria-hidden="true"></div>
+        <div class="yt__interior">
+            <div class="yt__cab">
+                <h2 class="yt__titulo revelar" id="youtube-titulo">YouTube</h2>
+                <div class="yt__intro revelar" style="--d:.15s">
+                    <div class="yt__canal">
+                        <span class="yt__avatar" data-yt-avatar><span class="yt__avatar-letra" aria-hidden="true">M</span></span>
+                        <span class="yt__canal-datos">
+                            <strong data-yt-nombre>Marta Cruz</strong>
+                            <span class="edad">@mcruzrod06</span>
+                        </span>
+                    </div>
+                    <p>Bienvenido a mi canal de YouTube. Aquí subo mis vídeos y los comparto con todos los que os pasáis por aquí. Dale al play al último que he publicado, echa un vistazo a los anteriores y, si te gusta lo que ves, suscríbete para no perderte ninguno.</p>
+                    <a class="enlace" href="https://www.youtube.com/@mcruzrod06" target="_blank" rel="noopener" data-yt-canal>Ir al canal</a>
+                </div>
+            </div>
+
+            <div class="yt__escena">
+                <div class="portada-wrap revelar">
+                    <div class="yt__marco">
+                        <a class="yt__poster" href="https://www.youtube.com/@mcruzrod06" target="_blank" rel="noopener" aria-label="Ver mi canal de YouTube" data-yt-poster>
+                            <span class="yt__play yt__play--grande" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="yt__info">
+                    <p class="edad revelar" data-yt-etiqueta>Último vídeo</p>
+                    <h3 class="revelar" style="--d:.1s" data-yt-titulo>Mi último vídeo</h3>
+                    <div class="yt__desc revelar" style="--d:.2s" data-yt-desc>Aquí verás siempre el último vídeo que he subido al canal, con su título y su descripción.</div>
+                    <p class="yt__fecha revelar" style="--d:.15s" data-yt-fecha hidden></p>
+                    <button type="button" class="yt__leer" data-yt-leer hidden aria-expanded="false">Leer más</button>
+                    <div class="acciones revelar" style="--d:.3s">
+                        <a href="https://www.youtube.com/@mcruzrod06" class="boton" target="_blank" rel="noopener" data-yt-ver>Ver en YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="yt__galeria revelar" data-yt-galeria>
+                <div class="yt__galeria-cab">
+                    <h3>Más vídeos</h3>
+                    <div class="yt__flechas">
+                        <button type="button" class="yt__flecha" data-yt-prev aria-label="Vídeos anteriores"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+                        <button type="button" class="yt__flecha" data-yt-next aria-label="Vídeos siguientes"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+                    </div>
+                </div>
+                <div class="yt__pista"></div>
+                <p class="yt__nota">Pulsa cualquier vídeo para verlo en YouTube. También puedes arrastrar la fila hacia los lados.</p>
+            </div>
+        </div>
+    </section>
+
     <footer class="cierre">
         <div class="cierre__fila">
             <section class="redes revelar">
@@ -123,6 +179,9 @@
                 </a>
                 <a href="https://www.instagram.com/mcruzrod06/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener">
                     <img src="img/instagram.png" alt="Perfil de Instagram de Marta Cruz">
+                </a>
+                <a href="https://www.youtube.com/@mcruzrod06" target="_blank" rel="noopener">
+                    <img src="img/youtube.png" alt="Canal de YouTube de Marta Cruz">
                 </a>
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=martacruzcontact@gmail.com" target="_blank" rel="noopener">
                     <img src="img/mail.png" alt="Perfil de mail de Marta Cruz">
@@ -139,7 +198,7 @@
             <div class="charlas__texto">
                 <p class="cierre__titulo">Charlas y entrevistas</p>
                 <p class="cierre__texto">Todas las charlas, entrevistas y más actividades de Marta, reunidas en un solo lugar.</p>
-                <a class="boton" href="https://martacruzrodriguez.my.canva.site/" target="_blank" rel="noopener">Visitar la web</a>
+                <a class="boton" href="https://martacruzrodriguez.my.canva.site/" target="_blank" rel="noopener">Visitar canva</a>
             </div>
             <a class="charlas__qr" href="https://martacruzrodriguez.my.canva.site/" target="_blank" rel="noopener">
                 <img src="img/QR.png" alt="Código QR de la web de Marta Cruz con sus charlas y entrevistas">
